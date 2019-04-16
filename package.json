@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "nwb build-react-component",
+    "deploy": "gh-pages -d demo/dist",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
@@ -24,14 +25,15 @@
     "react": "16.x"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "nwb": "0.23.x",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "author": "",
+  "author": "Mike Yermolayev",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/MikeYermolayev/store-providers-hooks",
   "keywords": [
     "react-component"
   ]
