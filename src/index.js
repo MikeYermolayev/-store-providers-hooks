@@ -25,10 +25,11 @@ const StoreContext = createContext();
 export const StoreProviders = ({ store, children }) => (
     <StoreContext.Provider value={store}>
         {
-            Object.values(store)
-                .reduce((acc, { context, reducer, initialState }) =>
+            Object.entries(store)
+                .reduce((acc, [key, { context, reducer, initialState }]) =>
                     (
                         <Provider
+                            key={key}
                             nodeToWrap={acc}
                             context={context}
                             reducer={reducer}

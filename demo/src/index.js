@@ -10,7 +10,6 @@ import { Message } from './components/Message';
 const store = createStore(reducersConfig, [loggingMiddleware]);
 
 const Demo = () => {
-    console.log(`DEMO`);
     return (
         <StoreProviders store={store}>
             <h1>store-providers-hooks Demo</h1>
