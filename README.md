@@ -4,7 +4,9 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe store-providers-hooks here.
+Multi-store global state management for React with hooks and Context API.
+
+`yarn store-providers-hooks`
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
